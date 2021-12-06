@@ -1,0 +1,10 @@
+workspace:
+  qa:
+    device:
+      L10AW: "20016523600473"
+      CT60: "abcd"
+      TA: "2"
+  demo:
+    device:
+      MC: "2222"
+      TA: "2"
