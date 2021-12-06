@@ -1,0 +1,6 @@
+appPackage: 'com.msw_parent'
+appActivity: 'com.dhl.smartops.parent.MainActivity'
+mobileCenterUrl: 'https://mobilecenter.dhl.com/wd/hub'
+mobileCenterOauthId: 'oauth2-She4lh7Is1ITijVHe8Eg@microfocus.com'
+mobileCenterOauthSecret: 'Fo7alOBaAqJi6igkwFyX'
+mobileCenterTenantId: '999999999'

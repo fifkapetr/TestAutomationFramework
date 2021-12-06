@@ -1,0 +1,31 @@
+webdrivers:
+  chrome:
+    path: 'C:\Users\pfifka\Downloads\chromedriver.exe'
+  firefox:
+    path: 'firefox path'
+  edge:
+    path: 'edge path'
+  safari:
+    path: 'safari path'
+
+applications:
+  inventiweb:
+    environments:
+      PROD: "https://www.inventi.cz"
+      TEST: "https://www.inventi.cz"
+      DEV: "https://www.inventi.cz"
+  dhl.smartops.user_management:
+      environments:
+        PROD: "https://um-dsc-smartops-fat.ocp1.dhl.com/um/#/"
+        QA: "https://smartops-qa.dhl.com/um/#/"
+  dhl.smartplan.smartplan:
+      environments:
+        DEV: ""
+        FAT: "https://czcholstc001350.prg-dc.dhl.com:8443/login/user"
+
+timeouts:
+  VERY_SHORT: 1
+  SHORT: 5
+  MEDIUM: 20
+  LONG: 60
+  VERY_LONG: 300
