@@ -14,6 +14,12 @@ public class NessMainPage extends StartPage {
     @FindBy(how = How.XPATH, using = "//div[@class='cta-talk blue-btn']//a[@href='/contact-us/']")
     private WebElement letsTalkButton;
 
+    @FindBy(how = How.XPATH, using = "//li[contains(@id, 'menu-item')]//a[@href='/contact-us/']")
+    private WebElement contactAnchor;
+
+    @FindBy(how = How.XPATH, using = "//a[@href='https://www.ness.com/careers/' and @class='mega-menu-link']")
+    private WebElement careersAnchor;
+
     public NessMainPage(boolean openApplication) {
         super();
         if (openApplication)
@@ -25,5 +31,15 @@ public class NessMainPage extends StartPage {
     public ContactFormPage clickLetsTalkButton() {
         letsTalkButton.click();
         return new ContactFormPage();
+    }
+
+    public ContactFormPage clickContactAnchor() {
+        contactAnchor.click();
+        return new ContactFormPage();
+    }
+
+    public CareersPage clickCareersAnchor() {
+        careersAnchor.click();
+        return new CareersPage();
     }
 }
