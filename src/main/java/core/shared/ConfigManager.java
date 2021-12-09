@@ -13,8 +13,8 @@ import core.data.shared.SecureConfigData;
 
 public class ConfigManager {
 
-    private static final String[] configPaths = {"coreConfig.yml", "mobileConfig.yml", "mobileDevicesUdids.yml", "Secureconfig.yml"};
-    private static final ConfigData[] configData = {new CoreConfigData(), new MobileConfigData(), new MobileDevicesUdidConfigData(), new SecureConfigData()};
+    private static final String[] configPaths = {"coreConfig.yml", "mobileConfig.yml", "mobileDevicesUdids.yml"};
+    private static final ConfigData[] configData = {new CoreConfigData(), new MobileConfigData(), new MobileDevicesUdidConfigData()};
 
     public static void init() {
         Log.debug("Starting ConfigManager() init()");

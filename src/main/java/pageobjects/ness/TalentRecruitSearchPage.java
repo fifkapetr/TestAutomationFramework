@@ -1,7 +1,6 @@
 package pageobjects.ness;
 
 import core.builder.WebObject;
-import core.shared.Timeout;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -14,8 +13,16 @@ public class TalentRecruitSearchPage extends WebObject {
     @FindBy(how = XPATH, using = "//input[@name='ctl00$MainContent$txtKeyword']")
     private WebElement searchInput;
 
+    @FindBy(how = XPATH, using = "//div[@class='apply-btn-div'][1]")
+    private WebElement firstApplyDiv;
+
     public TalentRecruitSearchPage() {
         super();
         wait(MEDIUM).until(ExpectedConditions.visibilityOf(searchInput));
+    }
+
+    public JobDetailPage clickFirstApply() {
+        firstApplyDiv.click();
+        return new JobDetailPage();
     }
 }

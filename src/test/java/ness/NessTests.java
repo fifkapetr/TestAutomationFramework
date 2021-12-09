@@ -32,6 +32,7 @@ public class NessTests extends WebTestCase {
     public void openSlovakiaTalentRecruit() {
         new NessMainPage(true)
                 .clickCareersAnchor()
-                .clickSlovakiaAnchor();
+                .clickSlovakiaAnchor()
+                .clickFirstApply();
     }
 }
