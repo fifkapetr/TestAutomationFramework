@@ -1,6 +1,10 @@
 webdrivers:
   chrome:
+<<<<<<< HEAD
     path: 'C:\Users\pfifka\Downloads\chromedriver.exe'
+=======
+    path: 'C:\Users\tiash\Downloads\chromedriver.exe'
+>>>>>>> ef7645d09ba875516841f952ec271cfda0e6493e
   firefox:
     path: 'firefox path'
   edge:
@@ -22,6 +26,12 @@ applications:
       environments:
         DEV: ""
         FAT: "https://czcholstc001350.prg-dc.dhl.com:8443/login/user"
+<<<<<<< HEAD
+=======
+  ness:
+    environments:
+      PROD: "https://www.ness.com/"
+>>>>>>> ef7645d09ba875516841f952ec271cfda0e6493e
 
 timeouts:
   VERY_SHORT: 1

@@ -22,6 +22,9 @@ applications:
       environments:
         DEV: ""
         FAT: "https://czcholstc001350.prg-dc.dhl.com:8443/login/user"
+  ness:
+    environments:
+      PROD: "https://www.ness.com/"
 
 timeouts:
   VERY_SHORT: 1

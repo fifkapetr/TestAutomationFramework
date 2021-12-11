@@ -15,7 +15,7 @@ public abstract class WebTestCase {
 
     @BeforeClass
     @Parameters({"environment", "browser"})
-    public void init(@Optional("FAT") String environment,
+    public void init(@Optional("PROD") String environment,
                      @Optional("chrome") String browser) {
         WebParametersManager.setBrowser(browser);
         ParametersManager.setEnvironment(environment);
