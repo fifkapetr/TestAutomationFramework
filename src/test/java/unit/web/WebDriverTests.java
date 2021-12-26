@@ -1,10 +1,14 @@
 package unit.web;
 
+import core.data.shared.TestCaseData;
+import core.shared.TestType;
 import core.web.WebDriverManager;
 import core.shared.ParametersManager;
 import core.web.WebParametersManager;
+import junit.framework.TestCase;
 import org.testng.annotations.Test;
 import unit.web.mock.MockTestCase;
+import util.DriverUtils;
 
 public class WebDriverTests {
 
@@ -34,5 +38,12 @@ public class WebDriverTests {
         mockTestCase.quit();
     }
 
+    @Test
+    public void getScreenshotTest() {
+        MockTestCase mockTestCase = new MockTestCase();
+        mockTestCase.init("PROD", "chrome");
+        WebDriverManager.getWebDriverManager().getDriver().get("https://google.com");
+        DriverUtils.takeScreenshot(TestCaseData.getRunFolderPath() + "/screenshot.png");
+    }
 
 }

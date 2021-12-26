@@ -1,5 +1,6 @@
 package core;
 
+import core.data.shared.TestCaseData;
 import core.shared.RunManager;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -21,19 +22,19 @@ public class RunManagerTests {
     public void getRunFolderPathNotNull() {
         RunManager runManager = new RunManager();
         runManager.createRunFolder(testType);
-        Assert.assertNotNull(RunManager.getRunFolderPath());
+        Assert.assertNotNull(TestCaseData.getRunFolderPath());
     }
 
     @Test
     public void getRunFolderPathNotNullCreateNotCalled() {
-        Assert.assertNotNull(RunManager.getRunFolderPath());
+        Assert.assertNotNull(TestCaseData.getRunFolderPath());
     }
 
     @Test
     public void generatedFolderExists() {
         RunManager runManager = new RunManager();
         runManager.createRunFolder(testType);
-        Assert.assertTrue(new File(RunManager.getRunFolderPath()).exists());
+        Assert.assertTrue(new File(TestCaseData.getRunFolderPath()).exists());
     }
 
 }

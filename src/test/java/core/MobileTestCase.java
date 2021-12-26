@@ -44,7 +44,6 @@ public abstract class MobileTestCase {
         if (service != null) {
             service.stop();
         }
-
     }
 
     public URL getServiceUrl() {
