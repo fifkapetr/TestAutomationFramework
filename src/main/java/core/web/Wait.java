@@ -6,6 +6,7 @@ import core.shared.Waitable;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Stream;
@@ -21,7 +22,7 @@ public class Wait implements Waitable {
         waits = new HashMap<>();
         timeouts = ConfigManager.getCoreConfig().getTimeouts();
         Stream.of(Timeout.values())
-                .forEach(v -> waits.put(v, new WebDriverWait(driver, timeouts.get(v))));
+                .forEach(v -> waits.put(v, new WebDriverWait(driver, Duration.ofSeconds(timeouts.get(v)))));
     }
 
     @Override

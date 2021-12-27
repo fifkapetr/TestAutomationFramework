@@ -7,6 +7,7 @@ import core.mobile.MobileDriverManager;
 import core.mobile.MobileFrameworkManager;
 import core.mobile.MobileParametersManager;
 import core.shared.ConfigManager;
+import core.shared.RunManager;
 import core.shared.TestType;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import org.testng.annotations.*;
@@ -22,6 +23,7 @@ public abstract class MobileTestCase {
     @BeforeClass
     @Parameters({"environment","deviceName", "workspaceName"})
     public void init(@Optional("QA") String environment, @Optional("L10AW") String deviceName, @Optional("qa") String workspaceName) {
+        new RunManager().createRunFolder("MobileTest");
         TestCaseData.setTestType(TestType.MOBILE);
         new MobileFrameworkManager().init(workspaceName, deviceName);
     }
@@ -42,7 +44,6 @@ public abstract class MobileTestCase {
         if (service != null) {
             service.stop();
         }
-
     }
 
     public URL getServiceUrl() {

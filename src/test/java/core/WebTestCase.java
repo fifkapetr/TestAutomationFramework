@@ -6,11 +6,9 @@ import core.shared.TestType;
 import core.web.WebDriverManager;
 import core.web.WebFrameworkManager;
 import core.web.WebParametersManager;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
+@Listeners(WebTestListener.class)
 public abstract class WebTestCase {
 
     @BeforeClass

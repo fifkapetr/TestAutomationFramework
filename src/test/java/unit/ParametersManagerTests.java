@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import unit.web.mock.MockTestCase;
+import unit.mock.MockTestCase;
 
 public class ParametersManagerTests {
 

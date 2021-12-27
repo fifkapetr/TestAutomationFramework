@@ -1,6 +1,6 @@
 webdrivers:
   chrome:
-    path: 'C:\Users\pfifka\Downloads\chromedriver.exe'
+    path: '/Users/petrfifka/Downloads/chromedriver'
   firefox:
     path: 'firefox path'
   edge:
