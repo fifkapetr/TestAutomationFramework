@@ -1,4 +1,4 @@
-package unit.web.mock;
+package unit.mock;
 
 import core.WebTestCase;
 
