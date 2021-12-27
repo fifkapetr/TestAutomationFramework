@@ -9,7 +9,7 @@ import util.Utils;
 public class WebTestListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult iTestResult) {
-        Log.fail("Test: " + iTestResult.getTestName() + "failed. Getting screenshot");
+        Log.warn("Test: " + iTestResult.getTestName() + " failed. Getting screenshot");
         DriverUtils.takeScreenshot(TestCaseData.getRunFolderPath() + "FailureScreenshot " + Utils.getCurrentTimestampWithFormat("yyyy-MM-dd HH:mm:ss") + ".png");
     }
 }
