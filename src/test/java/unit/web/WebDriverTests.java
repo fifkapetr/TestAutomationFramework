@@ -6,7 +6,7 @@ import core.shared.ParametersManager;
 import core.web.WebDriverManager;
 import core.web.WebParametersManager;
 import org.testng.annotations.Test;
-import unit.web.mock.MockTestCase;
+import unit.mock.MockTestCase;
 import util.DriverUtils;
 
 public class WebDriverTests {

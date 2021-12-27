@@ -1,4 +1,4 @@
-package core;
+package unit;
 
 import core.data.shared.TestCaseData;
 import core.shared.RunManager;
