@@ -1,4 +1,4 @@
 package core.shared;
 
-public class OnFailure {
+public class TestListener{
 }

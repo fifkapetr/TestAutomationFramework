@@ -6,7 +6,7 @@ import org.testng.ITestResult;
 import util.DriverUtils;
 import util.Utils;
 
-public class TestListener implements ITestListener {
+public class WebTestListener implements ITestListener {
     @Override
     public void onTestFailure(ITestResult iTestResult) {
         Log.fail("Test: " + iTestResult.getTestName() + "failed. Getting screenshot");
